@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Login Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="login">
+    <div class="login__container">
+      <img class="login__logo" src= <%=asset_path("logo.svg")%> alt="gt logo" />
+      <h1 class="login__title">Welcome!<br> Sign In Below</h1>
+      <form class="login__form" action="index.html" method="post">
+        <div class="login__label-container"><label class="login__label" for="">Email</label></div>
+        <input class="login__input" type="text" name="email" placeholder="email@example.com">
+        <div class="login__label-container"><label class="login__label" for="">Password</label></div>
+        <input class="login__input" type="text" name="password" placeholder="******">
+      </form>
+      <div class="login__link-container"><a class="login__link" href="">Forgot your password?</a></div>
+      <div class="login__button-container"><button class="button button_width_246">Sign In</button></div>
+    </div>
+  </main>
+</body>
+
+</html>
