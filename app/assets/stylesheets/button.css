@@ -1,0 +1,46 @@
+.button {
+  padding: 0 30px;
+  height: 35px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 17.5px;
+  border: solid 1px #3ca2b9;
+  font-weight: bold;
+  color: #3ca2b9;
+}
+
+.button:focus {
+ outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button_width_246 {
+  width: 246px;
+}
+
+.button_theme_blue {
+  background-color: #c9e3e6;
+  border: solid 1px #c9e3e6;
+  color: #3ca2b9;
+  font-weight: normal;
+}
+
+.button_theme_blue.button_is-selected {
+  background-color: #3ca2b9;
+  border: solid 1px #3ca2b9;
+  color: #fff;
+}
+
+.button_theme_rectangular-white {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #3ca2b9;
+  border: none;
+  padding: 0 15px;
+  height: 40px;
+}
