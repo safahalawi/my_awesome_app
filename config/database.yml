@@ -6,14 +6,12 @@ default: &default
 development:
   <<: *default
   database: my_awesome_app_development
-  username: postgres
-  password: Sophie@1993
+
+
 test:
   <<: *default
   database: my_awesome_app_test
-  username: postgres
-  password: Sophie@1993
 
-production:
+
   <<: *default
   database: my_awesome_app_production
