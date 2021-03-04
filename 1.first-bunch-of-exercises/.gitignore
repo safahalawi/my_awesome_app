@@ -1,0 +1,7 @@
+/node_modules
+*.editorconfig
+*.rubocop.yml
+.DS_Store
+/stylelint
+/tmp
+/log
