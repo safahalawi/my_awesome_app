@@ -52,7 +52,7 @@ class UserTest < ActiveSupport::TestCase
     @second_user = User.create({
       first_name: 'Safa',
       last_name: 'Halawi',
-      email: 'rami@gtlogic.com'
+      email: 'ram@gtlogic.com'
     })
     @second_user.save
     assert @second_user.invalid?
