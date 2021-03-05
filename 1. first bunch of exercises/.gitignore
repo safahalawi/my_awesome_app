@@ -1,8 +1,0 @@
-/node_modules
-*.editorconfig
-*.rubocop.yml
-.DS_Store
-/stylelint
-/tmp
-/log
-/2.Add authentication
