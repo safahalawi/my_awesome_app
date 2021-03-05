@@ -1,15 +1,16 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   setup do
     @user = User.create({
-      first_name: 'Rami',
-      last_name: 'Rizk',
-      email: 'ram@gtlogic.com'
-    })
+                          first_name: 'Rami',
+                          last_name: 'Rizk',
+                          email: 'ram@gtlogic.com'
+                        })
   end
 
-  
   test 'getting the full name' do
     assert_equal 'Rami Rizk', @user.full_name
   end
@@ -46,19 +47,17 @@ class UserTest < ActiveSupport::TestCase
     @user.email = 'rami'
     assert @user.invalid?
     assert_equal @user.errors[:email].length, 1
-    assert @user.errors[:email].include?("is invalid")
+    assert @user.errors[:email].include?('is invalid')
 
     @user.email = 'rami@gtlogic.com'
     @second_user = User.create({
-      first_name: 'Safa',
-      last_name: 'Halawi',
-      email: 'rami@gtlogic.com'
-    })
+                                 first_name: 'Safa',
+                                 last_name: 'Halawi',
+                                 email: 'rami@gtlogic.com'
+                               })
     @second_user.save
     assert @second_user.invalid?
     assert_equal @second_user.errors[:email].length, 1
-    assert @second_user.errors[:email].include?("has already been taken")
-
+    assert @second_user.errors[:email].include?('has already been taken')
   end
-
 end
